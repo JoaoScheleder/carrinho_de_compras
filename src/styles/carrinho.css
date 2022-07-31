@@ -1,0 +1,340 @@
+h1{
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0
+}
+h2{
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+}
+div.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.close{
+    cursor: pointer;
+    color: rgb(67, 67, 67);
+}
+div.line{
+    width: 100%;
+    height: 1px;
+    margin: 8px 0 24px 0;
+    background-color: rgba(0, 0, 0, 0.128);
+    border-radius: 100px;
+}
+
+img{
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 1px 20px 6px rgba(0, 0, 0, 0.068);
+    object-fit: cover;
+    flex: 0;
+    border-radius: 15px;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.carrinhoContainer{
+    width: 40vw;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    border-radius: 20px;
+    max-height: 93vh;
+    min-height: 543px;
+}
+.produtosContainer{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 60vh;
+    min-height: 60vh;
+}
+p{
+    margin: 0;
+    width: fit-content;
+}
+.price{
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    font-weight: normal;
+    color: grey ;
+}
+.sellingPrice{
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+}
+div.quantity p{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: rgb(163, 163, 163) ;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer h1{
+    font-size: 2rem;
+}
+
+.footer .finalPrice{
+    text-align: end;
+    width: 100px;
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: grey ;
+}
+.footer .finalSelling{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(28, 28, 28);
+}
+
+p.frete-gratis{
+    margin: 0 auto;
+    background-color: rgba(78, 246, 78, 0.495);
+    color: rgb(4, 136, 4);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+div.finish button{
+    background-color: rgb(0, 119, 255);
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+div.finish button:hover{
+    background-color: rgb(6, 98, 246);
+}
+
+@media only screen and (max-height: 872px) {
+    h2{
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    .footer h1{
+        font-size: 1.7rem;
+    }
+    
+    .footer .finalPrice{
+        font-size: 0.8rem;
+    }
+    .footer .finalSelling{
+        font-size: 1.3rem;
+    }
+    .produtosContainer{
+        height: 55vh;
+        min-height: 55vh;
+
+    }
+}
+@media only screen and (max-height: 760px) {
+
+    div.quantity p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+
+
+  }
+  @media only screen and (max-height: 722px) {
+    div.finish button{
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    .carrinhoContaine{
+        padding: 8px;
+    }
+    div.line{
+        margin: 4px 0 12px 0;
+    }
+    img{
+        width: 90px;
+        height: 90px;
+    }
+  }
+  @media only screen and (max-width: 1082px) {
+
+    div.finish button{
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .carrinhoContainer{
+        width: 60vw;
+    }
+    div.switchContainer{
+        display: none;
+    }
+}
+  @media only screen and (max-width: 772px) {
+    .carrinhoContainer{
+        width: 80vw;
+    }
+    .footer h1{
+        font-size: 1.7rem;
+    }
+    
+    .footer .finalPrice{
+        font-size: 0.8rem;
+    }
+    .footer .finalSelling{
+        font-size: 1.3rem;
+    }
+    .info{
+        gap: 16px;
+    }
+    div.quantity p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    .produto{
+        padding: 0 8px;
+        gap: 0;
+    }
+
+    .footer h1{
+        font-size: 1.4rem;
+    }
+    
+    .footer .finalPrice{
+        font-size: 0.6rem;
+    }
+    .footer .finalSelling{
+        font-size: 1.1rem;
+    }
+
+    .carrinhoContainer{
+        width: 90vw;
+    }
+    h2{
+        font-size: 1.1rem;
+        
+    }
+    div.quantity p{
+        font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 456px) {
+    h2{
+        width: 150px;
+
+    }
+    div.finish button{
+        font-size: 1.2rem;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .price{
+        font-size: 0.8rem;
+    }
+    .sellingPrice{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 361px) {
+    h1{
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size: 0.7rem;
+        width: 110px;
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+    .info{
+        gap: 8px;
+    }
+    .price{
+        font-size: 0.6rem;
+    }
+    .sellingPrice{
+        font-size: 0.7rem;
+    }
+    div.quantity p{
+        font-size: 0.5rem;
+    }
+    div.finish button{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 300px) {
+    h2{
+        font-size: 0.7rem;
+        width: 100px;
+    }
+    img{
+        height: 65px;
+        width: 65px;
+    }
+    .info{
+        gap: 4px;
+    }
+    .price{
+        font-size: 0.5rem;
+    }
+    .sellingPrice{
+        font-size: 0.6rem;
+    }
+    div.quantity p{
+        font-size: 0.4rem;
+    }
+    div.finish button{
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+  
+  
